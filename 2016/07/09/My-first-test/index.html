@@ -1,0 +1,712 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="learning," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="前话伴随着信息时代的发展，越来越多的人开始使用github，github上的博客也成为展现自我的一大平台，那么怎么在github上上传自己写的文章也成为了我们的必修课之一，那么到底该怎么上传文章，文章的编写应该是怎么样的呢，我在学习接触之后，编写了这样的一篇文章，分享自己的拙解。
+
+如何创建新的文件及上传到github上的博客去。
+Markdown这种高逼格的东西，到底怎么用。
+
+
+简单的说说
+在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学会怎么在github的博客上发布文章">
+<meta property="og:url" content="http://yoursite.com/2016/07/09/My-first-test/index.html">
+<meta property="og:site_name" content="xiaoguoquan">
+<meta property="og:description" content="前话伴随着信息时代的发展，越来越多的人开始使用github，github上的博客也成为展现自我的一大平台，那么怎么在github上上传自己写的文章也成为了我们的必修课之一，那么到底该怎么上传文章，文章的编写应该是怎么样的呢，我在学习接触之后，编写了这样的一篇文章，分享自己的拙解。
+
+如何创建新的文件及上传到github上的博客去。
+Markdown这种高逼格的东西，到底怎么用。
+
+
+简单的说说
+在">
+<meta property="og:updated_time" content="2016-08-05T02:54:00.847Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学会怎么在github的博客上发布文章">
+<meta name="twitter:description" content="前话伴随着信息时代的发展，越来越多的人开始使用github，github上的博客也成为展现自我的一大平台，那么怎么在github上上传自己写的文章也成为了我们的必修课之一，那么到底该怎么上传文章，文章的编写应该是怎么样的呢，我在学习接触之后，编写了这样的一篇文章，分享自己的拙解。
+
+如何创建新的文件及上传到github上的博客去。
+Markdown这种高逼格的东西，到底怎么用。
+
+
+简单的说说
+在">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/09/My-first-test/"/>
+
+  <title> 学会怎么在github的博客上发布文章 | xiaoguoquan </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">xiaoguoquan</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">朝闻道，夕可死</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                学会怎么在github的博客上发布文章
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-09T16:07:48+08:00" content="2016-07-09">
+              2016-07-09
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前话"><a href="#前话" class="headerlink" title="前话"></a>前话</h1><p>伴随着信息时代的发展，越来越多的人开始使用github，github上的博客也成为展现自我的一大平台，那么怎么在github上上传自己写的文章也成为了我们的必修课之一，那么到底该怎么上传文章，文章的编写应该是怎么样的呢，我在学习接触之后，编写了这样的一篇文章，分享自己的拙解。</p>
+<ul>
+<li>如何创建新的文件及上传到github上的博客去。</li>
+<li>Markdown这种高逼格的东西，到底怎么用。</li>
+</ul>
+<hr>
+<p>简单的说说</p>
+<h1 id="在博客上写文章"><a href="#在博客上写文章" class="headerlink" title="在博客上写文章"></a>在博客上写文章</h1><p>找到自己的hexo文件，右键后点击 Git Bash Here，弹出命令窗口；<br>输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n &quot;想要写的文件名&quot;</div></pre></td></tr></table></figure></p>
+<p>执行命令后，就会在hexo文件下的source/_posts文件夹内新建了一个”文件名”的md文件。<br>编写文件之后，执行以下命令，就可以推送到服务器上，在博客上就可以看到新的文章啦。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo g //生成静态文件</div><div class="line">$ hexo s // 本地预览</div><div class="line">$ hexo d  //部署</div><div class="line"> //也可以合并在一起写成以下代码，但是跳过了本地预览的步骤</div><div class="line">$ hexo d -g</div></pre></td></tr></table></figure></p>
+<hr>
+<p>既然这么简单就能上传一篇文章，那么，是不是随便写一些文字编写文件就好呢？肯定不是！先前说过了，新建出来的是md文件。那么怎么去编写它呢？</p>
+<h1 id="初步认识和学习Markdown"><a href="#初步认识和学习Markdown" class="headerlink" title="初步认识和学习Markdown"></a>初步认识和学习Markdown</h1><h3 id="1-什么是Markdown"><a href="#1-什么是Markdown" class="headerlink" title="1. 什么是Markdown?"></a>1. 什么是Markdown?</h3><p>它是由亚伦·斯沃茨（Aaron Swartz）和约翰·格鲁伯（<a href="https://en.wikipedia.org/wiki/John_Gruber" target="_blank" rel="external">John Gruber</a>）设计的轻量级「<strong>标记语言</strong>」，使用这种标记语言撰写的文本，能被转换为HTML在Web上发布，并以结构化的效果展现。</p>
+<p>它简单易用。相较于Word、Pages等文本工具，省去了大量的排版和字体样式设置；相较于HTML，语法更加轻便，常用语法不超过10种。</p>
+<p>它备受青睐。除了极客的赞誉，各大网文社区、博客论坛的明星大V与文艺青年也纷纷追捧；除了简书、wordpress、farbox、logdown、Ghost、Jekyll、gitblog……等，一众博客工具，锤子便签和有道云笔记也相继支持。</p>
+<p>当然，我们学习它的最重要的理由是：</p>
+<ul>
+<li>编写博客需要用到它！</li>
+<li>装逼利器装逼利器装逼利器（<strong>没错，重要的事说三遍</strong>）</li>
+</ul>
+<h3 id="2-Markdown编辑器"><a href="#2-Markdown编辑器" class="headerlink" title="2. Markdown编辑器"></a>2. Markdown编辑器</h3><p>这种东西自己找好么。一定要我什么都写出来吗~当然在这里推荐一个比较方便的，毕竟用其他的编辑器都免不了要下载，对于某些在网上找不到资源的筒子们简直就是谋杀。</p>
+<ul>
+<li><p>推荐编辑利器：<a href="https://www.jianshu.com/" target="_blank" rel="external">简书</a><br>为什么要推荐呢。因为该网站自带的文本编辑就有Markdown编辑！进入网站，登陆后点击右上角头像[<strong>写文章</strong>]进入页面，在窗口左边找到[<strong>设置</strong>]按钮进入设置页面，在[<strong>选择常用的编辑器</strong>]选择 Markdown 按钮，设置完成之后返回文本编辑窗口，在编辑窗上部找到[<strong>切换到预览模式</strong>]按钮就完成了。是不是很方便呢。</p>
+<p><em>我不是在打广告</em> <em>我真的不是在打广告</em></p>
+</li>
+</ul>
+<h3 id="3-基本语法"><a href="#3-基本语法" class="headerlink" title="3. 基本语法"></a>3. 基本语法</h3><h5 id="语法属性"><a href="#语法属性" class="headerlink" title="语法属性"></a>语法属性</h5><ul>
+<li>作用域：作用域是一条语法标记的作用范围，常见为 行 段 间<ol>
+<li>行：回车换行（每一行以回车结尾）</li>
+<li>段：与行不同，每一段用一行空行隔开</li>
+<li>区间： 如 代码行，代码块，强调，括号等，作用域是符号所包裹起来的区域，如 <code>* *</code>、<code>_ _</code>等。值得注意的是区间可以是行的一部分也可以是包含多行，但是区间不能跨越段作用域，只能存在于一段之中。</li>
+</ol>
+</li>
+</ul>
+<h5 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h5><ul>
+<li>语法标记：<code>#</code>（#号后接空格），支持六个等级的标题；#号的数量表示标题的等级<br><em>也可以用 <code>= -</code> 来表示</em><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#一级标题</div><div class="line">##二级标题</div><div class="line">###三级标题</div><div class="line">####四级标题</div><div class="line">#####五级标题</div><div class="line">######六级标题</div><div class="line">一级标题</div><div class="line">==</div><div class="line">二级标题</div><div class="line">--</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>分割线（用三个星号：<em>*</em> 或中横杆：— 或下横杆：___ ）</li>
+</ul>
+<hr>
+<ul>
+<li>列表：<ol>
+<li>有序列表：<code>1.</code>（1+点+空格）</li>
+<li>无序列表：<code>*  +  -</code>（符号后接空格） </li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1. 有序列表1</div><div class="line">2. 有序列表2</div><div class="line">3. 游戏列表3</div><div class="line">* 无序列表</div><div class="line">+ 无序列表</div><div class="line">- 无需列表</div></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>引用：<code>&gt;</code>（大于号+空格）<blockquote>
+<p>事实上也是可以当成标题或者强调来用，毕竟这么显眼。</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li>链接： <code>[]()</code>[这里放文本]（这里放地址）<ol>
+<li>内联方式<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[百度](https://www.baidu.com)</div><div class="line">[简书](https://www.jianshu.com)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<p>输出就会成为以下的样子<br><a href="https://www.baidu.com" target="_blank" rel="external">百度</a><br><a href="https://www.jianshu.com" target="_blank" rel="external">简书</a></p>
+<ol>
+<li>引用方式<br>注意：以下的A/B可以替换成其他字符</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">点击[简书][A]</div><div class="line">点击[百度][B]</div><div class="line">[A]:https://www.jianshu.com</div><div class="line">[B]:https://www.baidu.com</div></pre></td></tr></table></figure>
+<p>输出后就会成为以下的样子<br>点击<a href="https://www.jianshu.com" target="_blank" rel="external">简书</a><br>点击<a href="https://www.baidu.com" target="_blank" rel="external">百度</a></p>
+<ul>
+<li><p>图片：<code>![]()</code>[这里放图片说明]（这里放图片地址）<br>注意：一定要有 ！号<br>图片也分为内联方式和引用方式，详情参照链接的写法。</p>
+</li>
+<li><p>强调：<code>* *    _ _</code>（星号对/下横杆对）</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">*重要的事情不用写三遍*</div><div class="line">_两边就够了_</div></pre></td></tr></table></figure>
+<p>输出一下，<em>重要的事情不用写三遍</em>   <em>两遍就够了</em><br>当然强调不仅仅只有斜体这一种，实际上有三种写法；<br>分别是：斜体<code>* *</code>，加粗<code>**  **</code>，斜体加粗<code>***   ***</code></p>
+<p>例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">大写加粗的尴尬怎么写</div><div class="line">&gt;  # **尴尬**</div></pre></td></tr></table></figure></p>
+<hr>
+<ul>
+<li>注释：<code>[^A][^A]:注释内容</code>[^A]是标注，[^A]:注释内容，必须一一相对应<br>详情请参照链接和图片的写法</li>
+</ul>
+<hr>
+<ul>
+<li>代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">代码行（`代码`）</div><div class="line">代码块（```代码```）</div><div class="line">Tab键Tab键+代码</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>`号成对出现，可以用Tab键缩进</p>
+<hr>
+<ul>
+<li>表格：<code>|</code>+<code>-</code>+<code>:</code>组合；<ol>
+<li>|和|之间形成单元格。</li>
+<li>第一行为表头，内容默认加粗居中。</li>
+<li>第二行-和：组合，标记本列单元格对齐方式。无:号，为默认左对齐；两端:为居中；左、右其中一端:向该侧对齐。</li>
+<li>其余行为普通单元格。</li>
+</ol>
+</li>
+</ul>
+<p>注意：（1）第二行不可省略，否则语法不完整；（2）表格必须为整段，中间不能有空行。<br>例：嗯。。。这个不常用，就不在这里演示了。</p>
+<hr>
+<p>关于Markdown的初步认识就在这里结束了。至于其他详细的内容，看心情再更新吧。</p>
+<h1 id="多说几句"><a href="#多说几句" class="headerlink" title="多说几句"></a>多说几句</h1><p>Markdown是为那些需要经常码字或者进行文字排版的、对码字手速和排版顺畅度有要求的人群设计的，他们希望用键盘把文字内容啪啪啪地打出来后就已经排版好了，最好从头到尾都不要使用鼠标。这些人包括经常需要写文档的码农、博客写手、网站小编、出版业人士等等。<br>学习Markdown并不像网上所说的5分钟学习上手，要想熟练使用还是要经过不断的使用和练习的。懒得折腾的人[<strong>例如我</strong>]为了github上的博客还是要慢慢磨啊。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/learning/" rel="tag">#learning</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/08/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/15/IE6兼容问题/" rel="prev" title="IE6兼容问题浅析">
+                IE6兼容问题浅析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/mw690/6af298edjw8eyun19przxj21hc0xcwob.jpg"
+               alt="xiaoguoquan" />
+          <p class="site-author-name" itemprop="name">xiaoguoquan</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xiaoguoquan" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1794283757?refer_flag=1001030201_" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/xiao-guo-quan-83" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前话"><span class="nav-number">1.</span> <span class="nav-text">前话</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在博客上写文章"><span class="nav-number">2.</span> <span class="nav-text">在博客上写文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初步认识和学习Markdown"><span class="nav-number">3.</span> <span class="nav-text">初步认识和学习Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-什么是Markdown"><span class="nav-number">3.0.1.</span> <span class="nav-text">1. 什么是Markdown?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Markdown编辑器"><span class="nav-number">3.0.2.</span> <span class="nav-text">2. Markdown编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-基本语法"><span class="nav-number">3.0.3.</span> <span class="nav-text">3. 基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#语法属性"><span class="nav-number">3.0.3.0.1.</span> <span class="nav-text">语法属性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#常用语法"><span class="nav-number">3.0.3.0.2.</span> <span class="nav-text">常用语法</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多说几句"><span class="nav-number">4.</span> <span class="nav-text">多说几句</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xiaoguoquan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

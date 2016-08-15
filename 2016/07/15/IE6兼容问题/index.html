@@ -1,0 +1,687 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="html," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="关于网页兼容到IE6问题的简单说明
+
+1. 使用声明
+你必须经常在html网页头部放置一个声明，推荐使用严格的标准。例如12&amp;lt;!DOCTYPEHTMLPUBLIC“-//W3C//DTDHTML4.01//EN”   &amp;quot;http://www.w3.org/TR/html4/strict.dtd”&amp;gt; or,forXHTML:  &amp;lt;!DOCTYPEhtmlPUBLIC“-/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IE6兼容问题浅析">
+<meta property="og:url" content="http://yoursite.com/2016/07/15/IE6兼容问题/index.html">
+<meta property="og:site_name" content="xiaoguoquan">
+<meta property="og:description" content="关于网页兼容到IE6问题的简单说明
+
+1. 使用声明
+你必须经常在html网页头部放置一个声明，推荐使用严格的标准。例如12&amp;lt;!DOCTYPEHTMLPUBLIC“-//W3C//DTDHTML4.01//EN”   &amp;quot;http://www.w3.org/TR/html4/strict.dtd”&amp;gt; or,forXHTML:  &amp;lt;!DOCTYPEhtmlPUBLIC“-/">
+<meta property="og:updated_time" content="2016-08-05T08:40:32.332Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IE6兼容问题浅析">
+<meta name="twitter:description" content="关于网页兼容到IE6问题的简单说明
+
+1. 使用声明
+你必须经常在html网页头部放置一个声明，推荐使用严格的标准。例如12&amp;lt;!DOCTYPEHTMLPUBLIC“-//W3C//DTDHTML4.01//EN”   &amp;quot;http://www.w3.org/TR/html4/strict.dtd”&amp;gt; or,forXHTML:  &amp;lt;!DOCTYPEhtmlPUBLIC“-/">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/15/IE6兼容问题/"/>
+
+  <title> IE6兼容问题浅析 | xiaoguoquan </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">xiaoguoquan</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">朝闻道，夕可死</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                IE6兼容问题浅析
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-15T11:14:09+08:00" content="2016-07-15">
+              2016-07-15
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>关于网页兼容到IE6问题的简单说明</p>
+<blockquote>
+<h3 id="1-使用声明"><a href="#1-使用声明" class="headerlink" title="1. 使用声明"></a>1. 使用声明</h3></blockquote>
+<p>你必须经常在html网页头部放置一个声明，推荐使用严格的标准。例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPEHTMLPUBLIC“-//W3C//DTDHTML4.01//EN”   &quot;http://www.w3.org/TR/html4/strict.dtd”&gt; </div><div class="line">or,forXHTML:  &lt;!DOCTYPEhtmlPUBLIC“-//W3C//DTDXHTML1.0Strict//EN”   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”&gt;</div></pre></td></tr></table></figure></p>
+<p>最后你需要是IE6进入兼容模式，这已经足够兼容了。</p>
+<blockquote>
+<h3 id="2-li边距“无故”增加"><a href="#2-li边距“无故”增加" class="headerlink" title="2. li边距“无故”增加"></a>2. li边距“无故”增加</h3></blockquote>
+<p>任何事情都是有原因的，li边距也不例外。</p>
+<p>先描述一下具体状况：有些时候li边距会突然增 加很多，值也不固定（只在IE6/IE7有这种现象），让人摸不着头脑，仔细“研究”发现是由于其低级元素ul的padding引 起，padding的上下值对li有影响，左右无影 响。所以只好笨手笨脚地把padding去掉，换成margin。这是能解决问题，但往往不是我们想要的结果，或许 还会引起其他不必要的怪现象。</p>
+<p>现在终于发现解决这个问题的方法，其实很简单，既然是有ul引 起的，就设置ul的显示形式为<strong>display:inline-block</strong>;即可，前面加<strong>[*]</strong>是只针对IE6/IE7有效，其他浏览器并不渲染这个属性。</p>
+<blockquote>
+<h3 id="3-IE6-CSS选择器区分IE6"><a href="#3-IE6-CSS选择器区分IE6" class="headerlink" title="3. IE6 CSS选择器区分IE6"></a>3. IE6 CSS选择器区分IE6</h3></blockquote>
+<p>IE6不支持子选择器；先针对IE6使用常规申明CSS选择器，然后再用子选择器针对IE7+及其他浏览器。</p>
+<p><strong>IE6 专用</strong><br><code>.content {color:red;}</code></p>
+<p><strong> 其他浏览器 </strong><br><code>div&gt;p .content {color:blue;}</code></p>
+<blockquote>
+<h3 id="4-IE6最小高度"><a href="#4-IE6最小高度" class="headerlink" title="4. IE6最小高度"></a>4. IE6最小高度</h3></blockquote>
+<p>IE6 不支持min-height属性，但它却认为height就是最小高度。<br>解决方法：<br>使用ie6不支持但其余浏览器支持的属性!important<br><code>#container{min-height:200px; height:auto !important; height:200px;}</code></p>
+<blockquote>
+<h3 id="5-IE下z-index的bug"><a href="#5-IE下z-index的bug" class="headerlink" title="5.  IE下z-index的bug"></a>5.  IE下z-index的bug</h3></blockquote>
+<p>在IE浏览器中，定位元素的z-index层级是相对于各自的父级容器，所以会导致z-index出现错误的表现。解决方法是给其父级元素定义z-index，有些情况下还需要定义position:relative。</p>
+<blockquote>
+<h3 id="6-Overflow-Bug"><a href="#6-Overflow-Bug" class="headerlink" title="6. Overflow Bug"></a>6. Overflow Bug</h3></blockquote>
+<p>在IE6/7中，overflow无法正确的隐藏有相对定位position:relative;的子元素。解决方法就是给外包容器.wrap加上position:relative。</p>
+<blockquote>
+<h3 id="7-IE6调整窗口大小的-Bug"><a href="#7-IE6调整窗口大小的-Bug" class="headerlink" title="7. IE6调整窗口大小的 Bug"></a>7. IE6调整窗口大小的 Bug</h3></blockquote>
+<p>当把body居中放置，改变IE浏览器大小的时候，任何在body里面的相对定位元素都会固定不动了。</p>
+<p>解决办法：<br>给body定义position:relative;就行了。</p>
+<blockquote>
+<h3 id="8-文本重复Bug"><a href="#8-文本重复Bug" class="headerlink" title="8. 文本重复Bug"></a>8. 文本重复Bug</h3></blockquote>
+<p>在IE6中，一些隐藏的元素（如注释、<strong>display:none</strong> 的元素）被包含在一个浮动元素里，就有可能引发文本重复bug。</p>
+<p>解决办法：给浮动元素添加<strong>display:inlin</strong>;。</p>
+<blockquote>
+<h3 id="9-css-reset中的list-style-none"><a href="#9-css-reset中的list-style-none" class="headerlink" title="9. css reset中的list-style:none"></a>9. css reset中的list-style:none</h3></blockquote>
+<p>在IE6,7下,当UL不具有float:left;display:inline时;无论有没有list-style:none这个属性,列 表符都被隐藏,不占位置。<br>当ul具有<code>float:left;display:inline</code>属性时<br><code>list- style:none,</code>列表符被隐藏,但是仍然留有位置(list-style-position:inside);<br>未 设置list-style:none;列表符被隐藏,也不占位(list-style-position:outside)</p>
+<p>在firefox中只要list-style-type为none ,则 无论list-stype-position的值为outside或inside , list-style都能很好的被隐藏</p>
+<blockquote>
+<h3 id="10-链接去边线（完全兼容）"><a href="#10-链接去边线（完全兼容）" class="headerlink" title="10. 链接去边线（完全兼容）"></a>10. 链接去边线（完全兼容）</h3></blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">a,a:hover&#123;</div><div class="line">    outline:none;</div><div class="line">    blur:expression(this.onFocus=this.blur());</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="11-IE6中伪类-hover的使用及BUG"><a href="#11-IE6中伪类-hover的使用及BUG" class="headerlink" title="11. IE6中伪类:hover的使用及BUG"></a>11. IE6中伪类:hover的使用及BUG</h3></blockquote>
+<p>以前未曾遇到类似的问题，一番google，才知道这是IE6处理CSS伪类:hover的Bug。例如如下的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">a &#123;color: #333;&#125;</div><div class="line">a span &#123;color: green;&#125;</div><div class="line">a:hover &#123;&#125;</div><div class="line">a:hover span &#123;color: red; &#125;</div></pre></td></tr></table></figure></p>
+<p>在IE7/FF中，鼠标移动到链接上时，”淘你喜欢”字样会变为红色，但IE6则无反应。所以IE6的bug就是如果a 与 a:hover 的css定义是一样的，也就是说如果a:hover 中没有样式的改变，hover就不会被触发。但如果在a:hover{}增加一些特定的属性，例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a:hover&#123;border:none;&#125;</div><div class="line">或者</div><div class="line">a:hover&#123;padding:0;&#125;</div><div class="line">或者</div><div class="line">a:hover&#123;background: none;&#125;</div></pre></td></tr></table></figure></p>
+<p>此时hover就可以触发了。</p>
+<blockquote>
+<h3 id="12-原来IE6支持-important"><a href="#12-原来IE6支持-important" class="headerlink" title="12. 原来IE6支持!important"></a>12. 原来IE6支持!important</h3></blockquote>
+<p><code>.demo { color:#F00!important; color:#000; }/*IE6显示错误理</code>解：.demo显示为黑色*/</p>
+<p><strong>而下面IE6是正确理解的：.demo显示为红色</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.demo &#123; color:#F00!important;&#125;</div><div class="line"></div><div class="line">.demo &#123; color:#000; &#125;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<h3 id="13-去掉button按钮左右两边的留白"><a href="#13-去掉button按钮左右两边的留白" class="headerlink" title="13. 去掉button按钮左右两边的留白"></a>13. 去掉button按钮左右两边的留白</h3></blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*&#123;padding:0; margin:0&#125;</div><div class="line"></div><div class="line">input,button&#123;overflow:visible;padding:0;&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="14-中文字体在css中的写法"><a href="#14-中文字体在css中的写法" class="headerlink" title="14. 中文字体在css中的写法"></a>14. 中文字体在css中的写法</h3></blockquote>
+<ul>
+<li><p>黑体SimHei\9ED1\4F53</p>
+</li>
+<li><p>宋体SimSun\5B8B\4F53</p>
+</li>
+<li><p>新宋体 NSimSun\65B0\5B8B\4F53</p>
+</li>
+<li><p>仿宋FangSong\4EFF\5B8B</p>
+</li>
+<li><p>楷体KaiTi\6977\4F53 </p>
+</li>
+<li><p>微软正黑体Microsoft JhengHei\5FAE\x8F6F\6B63\9ED1\4F53</p>
+</li>
+<li><p>微软雅黑Microsoft YaHei\5FAE\8F6F\96C5\9ED1</p>
+</li>
+<li><p>幼圆 YouYuan\5E7C\5706</p>
+</li>
+</ul>
+<blockquote>
+<h3 id="15-IE不缓存背景图片的解决办法"><a href="#15-IE不缓存背景图片的解决办法" class="headerlink" title="15. IE不缓存背景图片的解决办法"></a>15. IE不缓存背景图片的解决办法</h3></blockquote>
+<p>高性能web开发中，一张小小的图片请求能省的就省，可IE6存在不缓存背景图的bug.如果重复使用了一个图片作为背景，那么每用一次就会重新去服务器拉一次。。。给服务器带来巨大的压力。解决方法有两种，</p>
+<ol>
+<li><p>采用JS</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var ua = navigator.userAgent.toLowerCase();</div><div class="line">var isIE6 = ua.indexOf(&quot;msie 6&quot;) &gt; -1;//判断是否为IE6</div><div class="line">// remove css image flicker</div><div class="line">//IE6下默认不缓存背景图片，CSS里每次更改图片的位置时都会重新发起请求，用这个方法告诉IE6缓存背景图片</div><div class="line">if(isIE6)&#123;</div><div class="line">try&#123;</div><div class="line">document.execCommand(&quot;BackgroundImageCache&quot;, false, true);</div><div class="line">&#125;catch(e)&#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>在页面上直接使用1个DIV元素来加载该图片，这样加载图片就能真正被缓存，鼠标移动也不会发送请求了。</p>
+</li>
+</ol>
+<blockquote>
+<h3 id="16-ie6下css实现max-min-width-height"><a href="#16-ie6下css实现max-min-width-height" class="headerlink" title="16. ie6下css实现max/min-width/height"></a>16. ie6下css实现max/min-width/height</h3></blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">width:expression(this.width&gt;300?&quot;300px&quot;:ture); max-width:300px;</div><div class="line">height:expression(this.height&gt;300?&quot;300px&quot;:ture); max-height:300px;</div></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="17-如何处理ie6的文字行高"><a href="#17-如何处理ie6的文字行高" class="headerlink" title="17. 如何处理ie6的文字行高"></a>17. 如何处理ie6的文字行高</h3></blockquote>
+<p>ie6下汉字就会显示偏上位置，而在标准浏览器中不存在这个问题</p>
+<p>测试ie6的文字行高表现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">body,ul,li,p &#123;margin:0;padding:0;&#125;</div><div class="line">body &#123; font:12px/1.5  Tahoma,&quot;宋体&quot;,Arial, Helvetica, sans-serif; &#125;</div><div class="line">ul &#123;float:left;list-style:none; margin-bottom:10px;&#125;</div><div class="line">ul li, p &#123; margin-top:4px;background:silver;clear:left;&#125;</div><div class="line">ul li &#123;float:left;margin-top:4px;&#125;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<h3 id="18早点和经常测试"><a href="#18早点和经常测试" class="headerlink" title="18早点和经常测试"></a>18早点和经常测试</h3></blockquote>
+<p>在你的网站和应用程序完成之前，不要放弃IE6的测试。问题将会更加严重并且需要很长时间去修复。如果你的网站可以运行于firefox和IE6，它将差不多肯定可以在其它浏览器下运行。</p>
+<blockquote>
+<h3 id="19重构你的代码"><a href="#19重构你的代码" class="headerlink" title="19重构你的代码"></a>19重构你的代码</h3></blockquote>
+<p>经常的，修复会比重新考虑布局问题更加花费时间。Html细微的修改和更加简单的css经常是最有效的。这意味着你要放弃完美的合法的代码，但是将会更少的问题出现，并且你知道怎样处理将要出现的情况。</p>
+<p><strong>注意事项</strong><br><strong>margin-top:10px; 属性前加“*”,这个只有IE6/IE7才能识别。</strong><br>例如:<br><code>div{    margin-top:10px; *margin-top:0px;}</code><br>星号或者加号+ 属性，这个只有IE6和IE7才支持此种标签。<br><strong>margin-top:10px \9; 属性值的后面加“\9”,这个只有IE才能识别。以上两种方法结合起来可以区分IE6、IE7、IE8+、非IE内核浏览器。</strong></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag">#html</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/09/My-first-test/" rel="next" title="学会怎么在github的博客上发布文章">
+                <i class="fa fa-chevron-left"></i> 学会怎么在github的博客上发布文章
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/mw690/6af298edjw8eyun19przxj21hc0xcwob.jpg"
+               alt="xiaoguoquan" />
+          <p class="site-author-name" itemprop="name">xiaoguoquan</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xiaoguoquan" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1794283757?refer_flag=1001030201_" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/xiao-guo-quan-83" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-使用声明"><span class="nav-number">1.</span> <span class="nav-text">1. 使用声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-li边距“无故”增加"><span class="nav-number">2.</span> <span class="nav-text">2. li边距“无故”增加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-IE6-CSS选择器区分IE6"><span class="nav-number">3.</span> <span class="nav-text">3. IE6 CSS选择器区分IE6</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-IE6最小高度"><span class="nav-number">4.</span> <span class="nav-text">4. IE6最小高度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-IE下z-index的bug"><span class="nav-number">5.</span> <span class="nav-text">5.  IE下z-index的bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Overflow-Bug"><span class="nav-number">6.</span> <span class="nav-text">6. Overflow Bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-IE6调整窗口大小的-Bug"><span class="nav-number">7.</span> <span class="nav-text">7. IE6调整窗口大小的 Bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-文本重复Bug"><span class="nav-number">8.</span> <span class="nav-text">8. 文本重复Bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-css-reset中的list-style-none"><span class="nav-number">9.</span> <span class="nav-text">9. css reset中的list-style:none</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-链接去边线（完全兼容）"><span class="nav-number">10.</span> <span class="nav-text">10. 链接去边线（完全兼容）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-IE6中伪类-hover的使用及BUG"><span class="nav-number">11.</span> <span class="nav-text">11. IE6中伪类:hover的使用及BUG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-原来IE6支持-important"><span class="nav-number">12.</span> <span class="nav-text">12. 原来IE6支持!important</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-去掉button按钮左右两边的留白"><span class="nav-number">13.</span> <span class="nav-text">13. 去掉button按钮左右两边的留白</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-中文字体在css中的写法"><span class="nav-number">14.</span> <span class="nav-text">14. 中文字体在css中的写法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-IE不缓存背景图片的解决办法"><span class="nav-number">15.</span> <span class="nav-text">15. IE不缓存背景图片的解决办法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-ie6下css实现max-min-width-height"><span class="nav-number">16.</span> <span class="nav-text">16. ie6下css实现max/min-width/height</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-如何处理ie6的文字行高"><span class="nav-number">17.</span> <span class="nav-text">17. 如何处理ie6的文字行高</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18早点和经常测试"><span class="nav-number">18.</span> <span class="nav-text">18早点和经常测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19重构你的代码"><span class="nav-number">19.</span> <span class="nav-text">19重构你的代码</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xiaoguoquan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
